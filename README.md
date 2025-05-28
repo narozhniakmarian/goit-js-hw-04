@@ -1,30 +1,30 @@
-# goit-js-hw-01
+# goit-js-hw-04
 
-task-1.js:
+task-1.js: console.log(isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 },
+8));
 
-console.log(makeTransaction(5, 3000)); // "You ordered 5 droids worth 15000 credits!"
+console.log(isEnoughCapacity({ apples: 4, grapes: 6, lime: 16 }, 12));
 
-console.log(makeTransaction(3, 1000)); // "You ordered 3 droids worth 3000 credits!"
+console.log(isEnoughCapacity({ apples: 1, lime: 5, tomatoes: 3 }, 14));
 
-console.log(makeTransaction(10, 500)); // "You ordered 10 droids worth 5000 credits!"
+task-2.js: console.log( calcAverageCalories([ { day: "monday", calories: 3010 },
+{ day: "tuesday", calories: 3200 }, { day: "wednesday", calories: 3120 }, { day:
+"thursday", calories: 2900 }, { day: "friday", calories: 3450 }, { day:
+"saturday", calories: 3280 }, { day: "sunday", calories: 3300 } ]) ); // 3180
 
+console.log( calcAverageCalories([ { day: "monday", calories: 2040 }, { day:
+"tuesday", calories: 2270 }, { day: "wednesday", calories: 2420 }, { day:
+"thursday", calories: 1900 }, { day: "friday", calories: 2370 }, { day:
+"saturday", calories: 2280 }, { day: "sunday", calories: 2610 } ]) ); // 2270
 
-
-task-2.js:
-
-console.log(getShippingMessage("Australia", 120, 50)); // "Shipping to Australia will cost 170 credits"
-
-console.log(getShippingMessage("Germany", 80, 20)); // "Shipping to Germany will cost 100 credits"
-
-console.log(getShippingMessage("Sweden", 100, 20)); // "Shipping to Sweden will cost 120 credits"
-
-
-
+console.log( calcAverageCalories([]) ); // 0
 
 task-3.js:
 
-console.log(getElementWidth("50px", "8px", "4px")); // 74
+console.log(profile.getInfo()); // "Jacob has 300 active hours!"
 
-console.log(getElementWidth("60px", "12px", "8.5px")); // 101
+profile.changeUsername("Marco"); console.log(profile.getInfo()); // "Marco has
+300 active hours!"
 
-console.log(getElementWidth("200px", "0px", "0px")); // 200
+profile.updatePlayTime(20); console.log(profile.getInfo()); // "Marco has 320
+active hours!"
